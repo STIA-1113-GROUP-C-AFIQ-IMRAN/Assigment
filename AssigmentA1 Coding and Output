@@ -1,0 +1,121 @@
+Coding:
+package assigment;
+
+import java.util.Scanner;
+
+public class assigmentA1 {
+
+	private static final String Discount = null;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int quantity;
+		int item1, item2, item3;
+		double PItem1, PItem2, PItem3;
+		
+		
+		Scanner scanMe = new Scanner (System.in);
+		
+		System.out.println("Enter the number of item: ");
+		quantity = scanMe.nextInt();
+		
+		System.out.println("Enter price of first item: RM");
+		PItem1 = scanMe.nextInt();		
+		System.out.println("Enter quantity of first item: ");
+		item1 = scanMe.nextInt();
+		
+		System.out.println("Enter price of second item: RM");
+		PItem2 = scanMe.nextInt();		
+		System.out.println("Enter quantity of second item: ");
+		item2 = scanMe.nextInt();
+		
+		System.out.println("Enter price of third item: RM");
+		PItem3 = scanMe.nextInt();
+		System.out.println("Enter quantity of third item: ");
+		item3 = scanMe.nextInt();
+		
+		double Total;
+		double T1 = (PItem1 * item1);
+		double T2 = (PItem2 * item2);
+		double T3 = (PItem3 * item3);
+		
+		Total = T1 + T2 + T3;
+		
+		System.out.println("Total Price: " + Total);
+		
+		double D;
+		if (Total < 100) {
+		 D = (10/100) * Total;
+			
+		}	else {
+		  D = (20/100) * Total;
+		}
+		
+		double TPrice = Total - D; 
+		
+		System.out.println("Discount recive: " + D);
+		System.out.println("Price to be paid: " + TPrice);
+
+	}
+  
+  Output:
+  package assigment;
+
+import java.util.Scanner;
+
+public class assigmentA1 {
+
+	private static final String Discount = null;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int quantity;
+		int item1, item2, item3;
+		double PItem1, PItem2, PItem3;
+		
+		
+		Scanner scanMe = new Scanner (System.in);
+		
+		System.out.println("Enter the number of item: ");
+		quantity = scanMe.nextInt();
+		
+		System.out.println("Enter price of first item: RM");
+		PItem1 = scanMe.nextInt();		
+		System.out.println("Enter quantity of first item: ");
+		item1 = scanMe.nextInt();
+		
+		System.out.println("Enter price of second item: RM");
+		PItem2 = scanMe.nextInt();		
+		System.out.println("Enter quantity of second item: ");
+		item2 = scanMe.nextInt();
+		
+		System.out.println("Enter price of third item: RM");
+		PItem3 = scanMe.nextInt();
+		System.out.println("Enter quantity of third item: ");
+		item3 = scanMe.nextInt();
+		
+		double Total;
+		double T1 = (PItem1 * item1);
+		double T2 = (PItem2 * item2);
+		double T3 = (PItem3 * item3);
+		
+		Total = T1 + T2 + T3;
+		
+		System.out.println("Total Price: " + Total);
+		
+		double D;
+		if (Total < 100) {
+		 D = (10/100) * Total;
+			
+		}	else {
+		  D = (20/100) * Total;
+		}
+		
+		double TPrice = Total - D; 
+		
+		System.out.println("Discount recive: " + D);
+		System.out.println("Price to be paid: " + TPrice);
+
+	}
